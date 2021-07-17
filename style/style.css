@@ -1,0 +1,173 @@
+@media (max-width: 421px) {
+  .box {
+    width: 100% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box .box-1 {
+    width: 100% !important;
+  }
+  .box .box-1 #head {
+    margin-left: 0.5rem;
+  }
+  .box .box-2 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+  .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+  }
+  .box .box-1 {
+    width: 100% !important;
+  }
+  .box .box-1 #head {
+    margin-left: 0.5rem;
+  }
+  .box .box-2 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .box {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .box-2 {
+    margin-left: 0.5rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: lightblue;
+}
+
+html {
+  font: 10px;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.container .box {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.container .box .box-1 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  text-align: initial  !important;
+  padding: 1rem;
+  width: 50%;
+}
+
+.container .box .box-1 #bill {
+  width: 80%;
+  height: 30px;
+}
+
+.container .box .box-1 #person {
+  width: 80%;
+  height: 30px;
+}
+
+.container .box .box-1 button {
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  width: 70px;
+  height: 30px;
+  background-color: #045a7c;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+
+.container .box .box-1 button:hover {
+  background-color: #26a8c8;
+}
+
+.container .box .box-1 #custom {
+  margin-top: 10px;
+  width: 70px;
+  height: 25px;
+}
+
+.container .box .box-2 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  width: 50%;
+  text-align: initial;
+  margin-left: 2rem;
+}
+
+.container .box .box-2 .calc-values {
+  width: 70%;
+  background-color: #045a7c;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.container .box .box-2 .calc-values .tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .box .box-2 .calc-values .tip-amount #head {
+  margin-left: 3rem;
+  font-size: 2rem;
+  color: #26a8c8;
+}
+
+.container .box .box-2 .calc-values .total-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.container .box .box-2 .calc-values .total-amount #total {
+  margin-left: 3rem;
+  font-size: 2rem;
+  color: #26a8c8;
+}
+
+.container .box .box-2 .calc-values input {
+  width: 100%;
+  margin-top: 3rem;
+  height: 2rem;
+  background-color: #26a8c8;
+  border-radius: 2px;
+  border: 1px solid #045a7c;
+}
+/*# sourceMappingURL=style.css.map */

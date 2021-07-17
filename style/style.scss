@@ -1,0 +1,105 @@
+@import './mediaquery';
+
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: lightblue;
+}
+html{
+    font: 10px;
+}
+
+
+
+
+.container{
+    width: 100%;
+   text-align: center;
+   .box{
+       width: 60%;
+       margin: 0 auto;
+       border-radius: 5px;
+       display: flex;
+       background-color: white;
+       .box-1{
+           flex: 50%;
+           text-align: initial  !important; // it is for text alignment
+           padding: 1rem;
+           width: 50%;
+           #bill{
+               width: 80%;
+               height: 30px;
+           }
+           #person{
+            width: 80%;
+            height: 30px;
+           }
+           button{
+               cursor: pointer;
+               color: white;
+               margin-top: 10px;
+               width: 70px;
+               height: 30px;
+               background-color: rgb(4, 90, 124);
+               border-radius: 3px;
+               border:2px solid white;
+               &:hover{
+                   background-color: rgb(38, 168, 200);
+               }
+           }
+           #custom{
+            margin-top: 10px;
+            width: 70px;
+            height: 25px;
+           }
+       }
+       .box-2{
+           flex: 50%;
+           width: 50%;
+           text-align: initial;
+           margin-left: 2rem;
+           .calc-values{
+               width: 70%;
+               background-color: rgb(4, 90, 124);
+               margin-top: 2rem;
+                margin-right: 1rem;
+                padding: 2rem;
+                color: white;
+                margin-bottom: 2rem;
+                border-radius: 10px;
+                .tip-amount{
+                    display: flex;
+                    #head{
+                        margin-left: 3rem;
+                        font-size: 2rem;
+                        color: rgb(38, 168, 200);
+                    }
+                }
+                .total-amount{
+                    display: flex;
+                    margin-top: 1rem;
+                    #total{
+                        margin-left: 3rem;
+                        font-size: 2rem;
+                        color: rgb(38, 168, 200);
+                    }
+
+                }
+                input{
+                    width: 100%;
+                 margin-top: 3rem;
+                 height: 2rem;
+                 background-color: rgb(38, 168, 200);
+                 border-radius: 2px;
+                 border:1px solid rgb(4, 90, 124);
+
+}
+                }
+       }
+
+   }
+   }

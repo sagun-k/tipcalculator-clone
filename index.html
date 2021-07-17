@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>SPLITTER</h2>
+        <div class="box">
+            <div class="box-1">
+    <form action="" id="re">
+     <!-- <h1 id="head"></h1> -->
+     <!-- <h1 id="total"></h1> -->
+    
+     <p>Bill:</p>
+     <input type="text" id="bill" placeholder="$" >
+     <p>Number of People:</p>
+     <input type="text" id="person" >
+    </form>
+    <button class="btn" id="five">5%</button>
+    <button class="btn" id="ten">10%</button>  
+    <button class="btn" id="fifteen">15%</button>
+    <br>
+    <button class="btn"  id="twentyfive">25%</button>
+    <button class="btn" id="fifty">50%</button>
+    <input class="btn" type="text" id="custom" placeholder="custom">
+    </div>
+
+    <div class="box-2">
+       <div class="calc-values">
+           <div class="tip-amount">
+           <span>Tip Amount <br> /person </span>
+           <span id="head">$0.00</span>
+           </div>
+           <div class="total-amount">
+               <span>Total <br>/person</span>
+               <span id="total">$0.00</span>
+           </div>
+           <input type="button" onclick="fun()" value="Reset data" id="reeset">
+       </div>
+    
+    </div>
+    </div>
+
+
+
+    </div>
+
+
+ <script src="/js/script.js"></script>
+    <!-- <script>
+      
+      document.getElementById('five').addEventListener('click', display);
+      document.getElementById('ten').addEventListener('click',display);
+      document.getElementById('fifteen').addEventListener('click',display);
+      document.getElementById('twentyfive').addEventListener('click',display);
+      document.getElementById('fifty').addEventListener('click',display);
+      document.getElementById('custom').addEventListener('keyup',display);
+     
+      
+
+           
+             function display(event){
+                 let bill=document.getElementById('bill').value;
+                 let person=document.getElementById('person').value;
+                 let custom=document.getElementById('custom').value;
+                 if(event.target.id === 'five'){
+                    let tip=0.05;
+                    let result=tip*parseFloat(bill);
+                    let totaltip=parseFloat(person)*parseFloat(result);
+                     document.getElementById('head').innerHTML=  result.toFixed(4);
+                     document.getElementById('total').innerHTML= totaltip.toFixed(4);
+                     
+                 }
+                 else if(event.target.id === 'ten'){
+                    let tip=0.1;
+                    let result=tip*parseFloat(bill);
+                    let totaltip=parseFloat(person)*parseFloat(result);
+                     document.getElementById('head').innerHTML=result.toFixed(4);
+                     document.getElementById('total').innerHTML=  totaltip.toFixed(4);
+                 }
+                 else if(event.target.id === "fifteen"){
+                    let tip=0.15;
+                    let result=tip*parseFloat(bill);
+                    let totaltip=parseFloat(person)*parseFloat(result);
+                     document.getElementById('head').innerHTML= result.toFixed(4);
+                     document.getElementById('total').innerHTML= totaltip.toFixed(4);
+                 }
+                 else if(event.target.id === "twentyfive"){
+                    let tip=0.25;
+                    let result=tip*parseFloat(bill);
+                    let totaltip=parseFloat(person)*parseFloat(result);
+                     document.getElementById('head').innerHTML=result.toFixed(4);
+                     document.getElementById('total').innerHTML= totaltip.toFixed(4);
+                 }
+                 else if(event.target.id === "fifty"){
+                    let tip=0.5;
+                    let result=tip*parseFloat(bill);
+                    let totaltip=parseFloat(person)*parseFloat(result);
+                     document.getElementById('head').innerHTML=result.toFixed(4);
+                     document.getElementById('total').innerHTML=totaltip.toFixed(4);
+                 }
+                 else{
+                       let tip=parseFloat(custom)/100;
+                       let result=tip*parseFloat(bill);
+                    let totaltip=parseFloat(person)*parseFloat(result);
+                     document.getElementById('head').innerHTML= result.toFixed(4);
+                     document.getElementById('total').innerHTML=totaltip.toFixed(4);
+                 }
+              
+             }
+             
+             function fun(){
+                 document.getElementById('re').reset();
+             }
+             document.getElementById('reeset').addEventListener('click',redisplay)
+             function redisplay(event){
+                 if(event.target.id === 'reeset'){
+                    document.getElementById('head').innerHTML="$0.00";
+                     document.getElementById('total').innerHTML="$0.00";
+                 }
+             }
+                
+             
+       
+    </script> -->
+    
+</body>
+</html>
